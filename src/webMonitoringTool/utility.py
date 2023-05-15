@@ -4,7 +4,7 @@ import logging
 
 
 
-def read_urls_from_configfile(file_path):
+def read_urls_from_configfile(file_path: str):
     """
     This function reads list of http urls from the config file
     Args:
@@ -15,21 +15,20 @@ def read_urls_from_configfile(file_path):
     with open(file_path) as file:
         urls = []
         for line in file:
-            tempLine = line.strip()
-            if tempLine:
-                urls.append(tempLine)
+            url = line.strip()
+            if url:
+                urls.append(url)
     return urls
 
 
-def verifyContentRequiement(url, content_requirements):
+def verifyContentRequiement(url: str, content_requirement: str):
     """
-        This function triggers GET method to collect response data for each the URL and calculates 
-        the response time of url and verifies the content requirement for each url , then logs the message in the log file
+        This function triggers GET method to collect response data for URL and calculates 
+        the response time and verifies the content requirement for the url, then logs the message in the log file
         Args:
-            urls as List: List of http URL
+            url as string: http URL
             content_requirements as Dictionary: Dictionary for content requiremnet where key contains URL and value
             contains string content
-            interval as Literal
         Return: N/A
         """
     try:
@@ -46,24 +45,15 @@ def verifyContentRequiement(url, content_requirements):
         elapsed_time = end_time - start_time
 
         # Verify that the page content matches the content requirements
-        content = response.text
+        responseContent = response.text
 
-        # validate content requirement
-        requirements = content_requirements.get(url, [])
-        dataFound = True
-
-        for data in requirements:
-            if data not in content:
-                dataFound = False
-                break
-
-        if dataFound            
-            message = f'{url} is up and running. Response time: {elapsed_time:.2f}s'
+        if content_requirement in responseContent:              
+            message = f'{url} is up and running. Response time: {elapsed_time:.2f}s. {content_requirement} is found'
             logging.info(message)
             print(message)
         else:
             message = f'{url} is up, but the content does not match the requirement.'
-            logging.warning(message)
+            logging.error(message)
             print(message)
 
     except requests.exceptions.RequestException as e:
@@ -72,22 +62,27 @@ def verifyContentRequiement(url, content_requirements):
         print(message)
 
 
-def validateURLAndVerifyContentRequiement(urls, content_requirements, interval):
+def validateURLAndVerifyContentRequiement(urls: list, content_requirements: dict, interval: int, maxDuration: int):
     """
     This function validates the URL and verifies the content requirement for each url
     Args:
         urls as List: List of http URL
         content_requirements as Dictionary: Dictionary for content requiremnet where key contains URL and value
         contains string content
-        interval as Literal
+        interval as Literal: wait time in seconds
+        maxDuration as Literal: total execution time in seconds
     Return: N/A
     """
-    for url in urls:
-        verifyContentRequiement(url, content_requirements)
-    time.sleep(interval)
+    duration = 0
+    while duration<= maxDuration:  #configured for 3 mins
+        for url in urls:
+            verifyContentRequiement(url, content_requirements[url])
+        time.sleep(interval)
+        duration += interval
+        
 
 
-def configureLogging(logFileName):
+def configureLogging(logFileName: str):
     """
     This function configure the logging file .
     Args:
