@@ -1,0 +1,1 @@
+file_path = "C:\Users\theak\OneDrive\Desktop\fsecure_akriti\Resource\config.txt"
