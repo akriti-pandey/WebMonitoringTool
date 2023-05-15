@@ -1,3 +1,3 @@
-@echo off
-setx PYTHONPATH "%CD%\fsecure_akriti\src" /M
-echo PYTHONPATH isaa set to %PYTHONPATH%
+@ECHO OFF
+SET PYTHONPATH=%CD%
+ECHO Python path: %PYTHONPATH%
