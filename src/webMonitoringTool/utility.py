@@ -69,12 +69,12 @@ def validateURLAndVerifyContentRequiement(urls: list, content_requirements: dict
         urls as List: List of http URL
         content_requirements as Dictionary: Dictionary for content requiremnet where key contains URL and value
         contains string content
-        interval as Literal: wait time in seconds
-        maxDuration as Literal: total execution time in seconds
+        interval as int: wait time in seconds
+        maxDuration as int: total execution time in seconds
     Return: N/A
     """
     duration = 0
-    while duration<= maxDuration:  #configured for 3 mins
+    while duration<= maxDuration:
         for url in urls:
             verifyContentRequiement(url, content_requirements[url])
         time.sleep(interval)
