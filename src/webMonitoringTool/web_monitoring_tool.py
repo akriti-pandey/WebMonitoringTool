@@ -6,13 +6,12 @@
 import time
 import utility as utilLibrary
 
-
 config_file_path = "src\\resource\\config.txt"
 print("Config file path is {config_file_path}")
 
 timestamp = time.strftime("%Y%m%d%H%M%S")
 log_file_name = f"src\\log\\monitor_{timestamp}.log"
-print("Monitor log file name is {config_file_path}")
+print("Monitor log file name is {log_file_name}")
 
 interval = 20
 maxDuration = 90
