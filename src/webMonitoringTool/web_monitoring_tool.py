@@ -9,7 +9,7 @@ import utility as utilLibrary
 config_file_path = "src\\resource\\config.txt"
 
 timestamp = time.strftime("%Y%m%d%H%M%S")
-log_file_name = f"src\\log\\monitor_{timestamp}.log"
+log_file_name = f"src\\logs\\monitor_{timestamp}.log"
 
 interval = 20
 maxDuration = 90

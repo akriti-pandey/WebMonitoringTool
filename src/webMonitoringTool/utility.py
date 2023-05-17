@@ -91,5 +91,4 @@ def configureLogging(logFileName: str):
     Returns:
         U/A
     """
-    logging.basicConfig(filename=logFileName, level=logging.INFO,
-                        format='%(asctime)s - %(levelname)s - %(message)s')
+    logging.basicConfig(filename=logFileName, level=logging.INFO,format='%(asctime)s - %(levelname)s - %(message)s')
