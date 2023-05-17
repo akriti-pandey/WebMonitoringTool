@@ -36,6 +36,7 @@ def verifyContentRequiement(url: str, content_requirement: str):
         start_time = time.time()
 
         # Get reponse data for url
+        logging.info("Triggering GET request for url : {url}")
         response = requests.get(url, timeout=10)
 
         # capture end time
