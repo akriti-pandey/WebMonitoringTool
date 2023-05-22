@@ -1,0 +1,40 @@
+2023-05-18 18:46:08,064 - INFO - Triggering GET request for URL: https://www.google.com
+2023-05-18 18:46:08,375 - INFO - https://www.google.com is up and running. Response time: 0.31s. Google is found
+2023-05-18 18:46:08,375 - INFO - Triggering GET request for URL: https://www.facebook.com
+2023-05-18 18:46:08,498 - INFO - https://www.facebook.com is up and running. Response time: 0.12s. User is found
+2023-05-18 18:46:08,498 - INFO - Triggering GET request for URL: https://www.instagram.com
+2023-05-18 18:46:08,714 - INFO - https://www.instagram.com is up and running. Response time: 0.22s. insta is found
+2023-05-18 18:46:08,735 - INFO - Triggering GET request for URL: https://www.amazon.com
+2023-05-18 18:46:09,261 - ERROR - https://www.amazon.com is up, but the content does not match the requirement.
+2023-05-18 18:46:29,262 - INFO - Triggering GET request for URL: https://www.google.com
+2023-05-18 18:46:29,583 - INFO - https://www.google.com is up and running. Response time: 0.32s. Google is found
+2023-05-18 18:46:29,596 - INFO - Triggering GET request for URL: https://www.facebook.com
+2023-05-18 18:46:29,762 - INFO - https://www.facebook.com is up and running. Response time: 0.17s. User is found
+2023-05-18 18:46:29,762 - INFO - Triggering GET request for URL: https://www.instagram.com
+2023-05-18 18:46:29,994 - INFO - https://www.instagram.com is up and running. Response time: 0.23s. insta is found
+2023-05-18 18:46:29,995 - INFO - Triggering GET request for URL: https://www.amazon.com
+2023-05-18 18:46:30,206 - ERROR - https://www.amazon.com is up, but the content does not match the requirement.
+2023-05-18 18:46:50,208 - INFO - Triggering GET request for URL: https://www.google.com
+2023-05-18 18:46:50,581 - INFO - https://www.google.com is up and running. Response time: 0.37s. Google is found
+2023-05-18 18:46:50,581 - INFO - Triggering GET request for URL: https://www.facebook.com
+2023-05-18 18:46:50,834 - INFO - https://www.facebook.com is up and running. Response time: 0.25s. User is found
+2023-05-18 18:46:50,834 - INFO - Triggering GET request for URL: https://www.instagram.com
+2023-05-18 18:46:51,109 - INFO - https://www.instagram.com is up and running. Response time: 0.27s. insta is found
+2023-05-18 18:46:51,110 - INFO - Triggering GET request for URL: https://www.amazon.com
+2023-05-18 18:46:51,259 - ERROR - https://www.amazon.com is up, but the content does not match the requirement.
+2023-05-18 18:47:11,271 - INFO - Triggering GET request for URL: https://www.google.com
+2023-05-18 18:47:11,630 - INFO - https://www.google.com is up and running. Response time: 0.36s. Google is found
+2023-05-18 18:47:11,630 - INFO - Triggering GET request for URL: https://www.facebook.com
+2023-05-18 18:47:11,819 - INFO - https://www.facebook.com is up and running. Response time: 0.19s. User is found
+2023-05-18 18:47:11,819 - INFO - Triggering GET request for URL: https://www.instagram.com
+2023-05-18 18:47:12,079 - INFO - https://www.instagram.com is up and running. Response time: 0.26s. insta is found
+2023-05-18 18:47:12,079 - INFO - Triggering GET request for URL: https://www.amazon.com
+2023-05-18 18:47:12,232 - ERROR - https://www.amazon.com is up, but the content does not match the requirement.
+2023-05-18 18:47:32,239 - INFO - Triggering GET request for URL: https://www.google.com
+2023-05-18 18:47:32,616 - INFO - https://www.google.com is up and running. Response time: 0.38s. Google is found
+2023-05-18 18:47:32,616 - INFO - Triggering GET request for URL: https://www.facebook.com
+2023-05-18 18:47:32,761 - INFO - https://www.facebook.com is up and running. Response time: 0.15s. User is found
+2023-05-18 18:47:32,761 - INFO - Triggering GET request for URL: https://www.instagram.com
+2023-05-18 18:47:34,132 - INFO - https://www.instagram.com is up and running. Response time: 1.37s. insta is found
+2023-05-18 18:47:34,132 - INFO - Triggering GET request for URL: https://www.amazon.com
+2023-05-18 18:47:34,295 - ERROR - https://www.amazon.com is up, but the content does not match the requirement.
