@@ -1,5 +1,6 @@
 #This tool is designed to retrieve URLs from a specified configuration file, configure logging settings,
-#and periodically verify the presence of specific content requirements on each URL. 
+#and periodically verify the presence of specific content requirements on each URL. After verification it filter all error
+#messages from the log file and print in the console
 #The script utilizes a utility library (utility.py) to perform these operations.
 #Author : Akriti Pandey
 
@@ -35,4 +36,8 @@ if __name__ == '__main__':
     # verifies the content for url and logs data in the log the periodic checks
     utilLibrary.validateURLAndVerifyContentRequiement(urls, content_requirements, interval, maxDuration)
     
-   
+    # reads the log file and filters out all error messages
+    errorLogs = utilLibrary.read_error_logs(log_file_name)
+    
+    for msg in errorLogs:
+        print(msg)

@@ -92,3 +92,26 @@ def configureLogging(logFileName: str):
         U/A
     """
     logging.basicConfig(filename=logFileName, level=logging.INFO,format='%(asctime)s - %(levelname)s - %(message)s')
+
+
+def read_error_logs(log_file:str) :
+    """
+    This function reads and return error messages from the log file.
+    Args:
+        log_file as string
+    Returns:
+       error_logs as list 
+    """
+    error_logs = []
+
+    # Read the log file
+    with open(log_file, 'r') as file:
+        for line in file:
+            try:
+                if 'ERROR' in line:
+                    error_logs.append(line.strip())
+
+            except Exception:
+                # Ignore any exceptions that occur during parsing
+                pass
+    return error_logs

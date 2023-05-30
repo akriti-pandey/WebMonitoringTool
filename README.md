@@ -14,10 +14,8 @@ Main functions:
 * Measures the time it took for the web server to complete the whole request.
 * Verifies that the page content received from the server matches the content requirements (e.g., certain string in the web page).
 * Writes a log file that shows the progress of the periodic checks.
+* Filters all error messages from the log file and print it in console
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
 
 
 
@@ -30,6 +28,8 @@ Requirements
 ==================
 
 -Python 3.x
+
+Following modules need to be installed
 -utility library
 -OS
 -time

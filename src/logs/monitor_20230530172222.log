@@ -1,0 +1,8 @@
+2023-05-30 17:22:22,805 - INFO - Triggering GET request for URL: https://www.google.com
+2023-05-30 17:22:22,900 - INFO - https://www.google.com is up and running. Response time: 0.09s. Google is found
+2023-05-30 17:22:22,900 - INFO - Triggering GET request for URL: https://www.facebook.com
+2023-05-30 17:22:23,041 - INFO - https://www.facebook.com is up and running. Response time: 0.14s. User is found
+2023-05-30 17:22:23,041 - INFO - Triggering GET request for URL: https://www.instagram.com
+2023-05-30 17:22:23,258 - INFO - https://www.instagram.com is up and running. Response time: 0.22s. insta is found
+2023-05-30 17:22:23,267 - INFO - Triggering GET request for URL: https://www.amazon.com
+2023-05-30 17:22:23,422 - ERROR - https://www.amazon.com is up, but the content does not match the requirement.
