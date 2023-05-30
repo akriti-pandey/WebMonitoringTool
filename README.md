@@ -11,9 +11,6 @@ Main functions:
 * Writes a log file that shows the progress of the periodic checks.
 * Filters all error messages from the log file and print it in console
 
-
-
-
 Prerequiste
 ==================
 
@@ -48,8 +45,6 @@ Install the required dependencies:
 
 Install the required dependencies by running "pip Install" command
 
-
-
 Usage
 ==================
 1) Set the configuration parameters:
@@ -82,4 +77,3 @@ Usage
    lib.configureLogging(log_file_name)
 
 4. Run the script using cmd "python web_monitoring_tool.py"
-
