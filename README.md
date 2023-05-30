@@ -35,7 +35,7 @@ Installation
 ==================
 
 Clone the project repository.
-Installation Clone the repository: git clone https://github.com/your-username/url-monitor.git
+Installation Clone the repository: git clone https://github.com/akriti-pandey/WebMonitoringTool.git
 
 
 Navigate to the project directory: cd url-monitor
