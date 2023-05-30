@@ -12,8 +12,11 @@ git clone https://github.com/your-username/url-monitor.git
 2) Navigate to the project directory:
 cd url-monitor
 Install the required dependencies:
-pip install -r requirements.txt
-
+import os
+import time
+import utility
+import requests
+import logging
 3)Configuration
 Before running the script, make sure to configure the following settings in the config.txt file located in the src/resource directory:
 
