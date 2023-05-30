@@ -1,9 +1,4 @@
-.. F-Secure Web Monitoring Tool documentation master file, created by
-   sphinx-quickstart on Mon May 15 23:41:55 2023.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
-Welcome to F-Secure Web Monitoring Tool's documentation!
+Welcome to Web Monitoring Tool's documentation!
 ========================================================
 This tool is intended as a monitoring tool for web site administrators for detecting problems on their sites.
 
