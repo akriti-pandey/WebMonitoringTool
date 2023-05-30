@@ -6,3 +6,35 @@
 2023-05-22 17:55:01,858 - INFO - https://www.instagram.com is up and running. Response time: 0.45s. insta is found
 2023-05-22 17:55:01,858 - INFO - Triggering GET request for URL: https://www.amazon.com
 2023-05-22 17:55:02,367 - ERROR - https://www.amazon.com is up, but the content does not match the requirement.
+2023-05-22 17:55:22,381 - INFO - Triggering GET request for URL: https://www.google.com
+2023-05-22 17:55:22,689 - INFO - https://www.google.com is up and running. Response time: 0.31s. Google is found
+2023-05-22 17:55:22,689 - INFO - Triggering GET request for URL: https://www.facebook.com
+2023-05-22 17:55:22,817 - INFO - https://www.facebook.com is up and running. Response time: 0.13s. User is found
+2023-05-22 17:55:22,817 - INFO - Triggering GET request for URL: https://www.instagram.com
+2023-05-22 17:55:23,111 - INFO - https://www.instagram.com is up and running. Response time: 0.29s. insta is found
+2023-05-22 17:55:23,111 - INFO - Triggering GET request for URL: https://www.amazon.com
+2023-05-22 17:55:23,302 - ERROR - https://www.amazon.com is up, but the content does not match the requirement.
+2023-05-22 17:55:43,305 - INFO - Triggering GET request for URL: https://www.google.com
+2023-05-22 17:55:43,748 - INFO - https://www.google.com is up and running. Response time: 0.44s. Google is found
+2023-05-22 17:55:43,748 - INFO - Triggering GET request for URL: https://www.facebook.com
+2023-05-22 17:55:43,869 - INFO - https://www.facebook.com is up and running. Response time: 0.12s. User is found
+2023-05-22 17:55:43,869 - INFO - Triggering GET request for URL: https://www.instagram.com
+2023-05-22 17:55:44,680 - INFO - https://www.instagram.com is up and running. Response time: 0.81s. insta is found
+2023-05-22 17:55:44,680 - INFO - Triggering GET request for URL: https://www.amazon.com
+2023-05-22 17:55:45,283 - ERROR - https://www.amazon.com is up, but the content does not match the requirement.
+2023-05-22 17:56:05,287 - INFO - Triggering GET request for URL: https://www.google.com
+2023-05-22 17:56:05,670 - INFO - https://www.google.com is up and running. Response time: 0.38s. Google is found
+2023-05-22 17:56:05,670 - INFO - Triggering GET request for URL: https://www.facebook.com
+2023-05-22 17:56:05,813 - INFO - https://www.facebook.com is up and running. Response time: 0.14s. User is found
+2023-05-22 17:56:05,820 - INFO - Triggering GET request for URL: https://www.instagram.com
+2023-05-22 17:56:06,042 - INFO - https://www.instagram.com is up and running. Response time: 0.22s. insta is found
+2023-05-22 17:56:06,042 - INFO - Triggering GET request for URL: https://www.amazon.com
+2023-05-22 17:56:06,200 - ERROR - https://www.amazon.com is up, but the content does not match the requirement.
+2023-05-22 17:56:26,209 - INFO - Triggering GET request for URL: https://www.google.com
+2023-05-22 17:56:26,824 - INFO - https://www.google.com is up and running. Response time: 0.62s. Google is found
+2023-05-22 17:56:26,824 - INFO - Triggering GET request for URL: https://www.facebook.com
+2023-05-22 17:56:27,132 - INFO - https://www.facebook.com is up and running. Response time: 0.31s. User is found
+2023-05-22 17:56:27,132 - INFO - Triggering GET request for URL: https://www.instagram.com
+2023-05-22 17:56:27,584 - INFO - https://www.instagram.com is up and running. Response time: 0.45s. insta is found
+2023-05-22 17:56:27,584 - INFO - Triggering GET request for URL: https://www.amazon.com
+2023-05-22 17:56:27,787 - ERROR - https://www.amazon.com is up, but the content does not match the requirement.
