@@ -1,41 +1,90 @@
-# WebMonitoringTool
-URL Monitor
-This tool is designed to retrieve URLs from a specified configuration file, configure logging settings, and periodically verify the presence of specific content requirements on each URL. The script utilizes a utility library (utility.py) to perform these operations.
+.. F-Secure Web Monitoring Tool documentation master file, created by
+   sphinx-quickstart on Mon May 15 23:41:55 2023.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
 
-**Author**
-Akriti Pandey
+Welcome to F-Secure Web Monitoring Tool's documentation!
+========================================================
+This tool is intended as a monitoring tool for web site administrators for detecting problems on their sites.
 
-1) Installation
-Clone the repository:
-git clone https://github.com/your-username/url-monitor.git
+Main functions:
 
-2) Navigate to the project directory:
-cd url-monitor
-Install the required dependencies:
-import os
-import time
-import utility
-import requests
-import logging
-3)Configuration
-Before running the script, make sure to configure the following settings in the config.txt file located in the src/resource directory:
+* Reads a list of web pages (HTTP URLs) from a configuration file.
+* Periodically makes an HTTP request to each page.
+* Measures the time it took for the web server to complete the whole request.
+* Verifies that the page content received from the server matches the content requirements (e.g., certain string in the web page).
+* Writes a log file that shows the progress of the periodic checks.
 
-plaintext
-https://www.facebook.com
-https://www.google.com
-https://www.instagram.com
-https://www.amazon.com
-Each URL should be listed on a separate line.
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
 
-4)Usage
-To start monitoring the URLs and verifying the content requirements, run the following command:
 
-python main.py
 
-The script will read the URLs from the configuration file, configure the logging file, and periodically check the content requirements for each URL. The monitoring process will run every 20 seconds for a maximum duration of 90 seconds.
+Prerequiste
+==================
 
-5)Logs
-The monitoring logs will be saved in the src/logs directory with the filename format monitor_{timestamp}.log, where {timestamp} represents the current date and time in the format YYYYMMDDHHMMSS.
+set_python_path.bat need to be run in order to configure the python path
 
-License
-This project is licensed under the MIT License.
+Requirements
+==================
+
+-Python 3.x
+-utility library
+-OS
+-time
+-requests
+-logging
+
+Installation
+==================
+
+Clone the project repository.
+Installation Clone the repository: git clone https://github.com/your-username/url-monitor.git
+
+
+Navigate to the project directory: cd url-monitor
+Install the required dependencies: 
+-OS
+-time
+-requests
+-logging
+-utility
+
+Install the required dependencies by running "pip Install" command
+
+
+
+Usage
+==================
+1) Set the configuration parameters:
+
+   config_file_path: The path to the configuration file containing the list of URLs.
+   log_file_name: The path and filename for the log file where URL response times will be logged.
+   interval: The time interval (in seconds) between each URL verification.
+   maxDuration: The maximum duration (in seconds) for monitoring the URLs.
+
+   example:
+   in Windows:
+
+   config_file_path = "src\\resource\\config.txt"
+   log_file_name = "src\\log\\monitor.log"
+   interval = 20
+   maxDuration = 90
+
+2)Define the content requirements for each URL
+   example:
+   content_requirements = {
+      'https://www.facebook.com': 'User',
+      'https://www.google.com': 'Google',
+      'https://www.instagram.com': 'insta',
+      'https://www.amazon.com': 'amazon',
+   }
+
+3.Configure the logging file for monitoring URL response times using function configureLogging
+
+   example
+   lib.configureLogging(log_file_name)
+
+4. Run the script using cmd "python web_monitoring_tool.py"
+
